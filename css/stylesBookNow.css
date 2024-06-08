@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+header .container-fluid {
+    background-color: #808080;
+    position: sticky;
+    top: 0;
+    border-bottom: #000 solid 1px;
+    z-index: 1000;
+}
+
+button {
+    margin: 0;
+    background-color: rgb(121, 8, 27);
+    border: #000 solid 2px;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: rgb(226, 122, 140);
+    border: #000 solid 1.5px;
+    color: #000;
+}
+
+
+.toHome {
+    font-size: 16px;
+    color: #FFF;
+    background-color: rgb(121, 8, 27);
+    border: #000 solid 1.5px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.home {
+    padding-bottom: 20px; 
+}
+
+.toHome:hover {
+    background-color: rgb(121, 8, 27);
+    border: #000 solid 1.5px;
+}
+
+.buttons {
+    padding-top: 25px;
+    display: inline-block;
+}
+
+.buttons a {
+    border: #000 solid 1.5px;
+    background-color: rgb(121, 8, 27);
+    margin: 0 4px;
+}
+
+.buttons a:hover {
+    background-color: rgb(226, 122, 140);
+    border: #000 solid 1.5px;
+    color: #000;
+}
+
+.btn-sm {
+    padding: auto;
+    font-size: 10px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.phone {
+    padding-left: 25px;
+}
+
+.location {
+    padding-right: 10px;
+}
+
+.HOO {
+    padding-right: 28px;
+    justify-content: center;
+}
+
+.HOOP p {
+    line-height: 12px;
+    padding-bottom: none;
+}
+
+#selected {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+ 
+footer .container-fluid {
+    background-color: #808080;
+    padding: 10px 0;
+}
+
+footer .col {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer p {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #FFF; 
+}
+
+footer h5 {
+    color: #FFF; 
+    font-size: 16px;
+}
+/* book now page */
+
+.calendar {
+    margin-top: 15px;
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+ 
+    margin-bottom: 25px;
+   
+  }
+  
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgb(121, 8, 27);
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  .month button{
+    background-color: #FFF;
+    color: #000;
+    border: solid;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  main{
+    background-color: #cfcfcf;
+  }
+  
+  .weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .weekdays div, .days div {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .weekdays {
+    background:#ababab;
+  }
+  
+  .days div {
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .days div:hover {
+    background: #ababab;
+    border-radius: 2px;
+  }
+  
+  .days .selected {
+    background:  rgb(121, 8, 27);
+    color: white;
+    border-radius: 2px;
+  }
+  #right{
+    padding-top: 3%;
+  }
+
+  
+  
+
+  .bookNow label{
+    font-size: 12px;
+    line-height: .2;
+  }
+  .bookNow .radio label{
+   
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .bookNow .sport label{
+    display: inline-block;
+width: 140px;
+text-align: left;
+  }
+  .bookNow .radio a{
+    color: none;
+    text-decoration: underline;
+  }
+  .bookNow .radio a:link{
+    color: black;
+    font-style: bold;
+
+  }
+  .bookNow .radio a:visited{
+    color: black;
+
+  }
+
+  #bottomRow {
+    padding-top: 10px;
+  }
+  #bottomRow label{
+    font-size: large;
+    padding-right: 5px;
+  }
+
+  #bottomRow select{
+    font-size: 12px;
+    padding-right: 5px;
+    width: 200px;
+  }
+
+#soccerTrainerSelection label{
+    font-size: large;
+    padding-right: 5px;
+
+  }
+  #soccerTrainerSelection select{
+    font-size: 12px;
+    padding-right: 5px;
+    width: 185px;
+    
+
+  }
+  #basketballTrainerSelection label{
+    font-size: large;
+    padding-right: 5px;
+
+  }
+  #basketballTrainerSelection select{
+    font-size: 12px;
+    padding-right: 5px;
+    width: 185px;
+    
+
+  }
+  .time-input{
+    padding-top: 10px;
+  }
+  .time-input label{
+    font-size: large;
+    padding-right: 5px;
+  }
+  .time-input input{
+    font-size: 10px;
+    width: 100px;
+    
+  }
+  .email{
+    margin-top: 5px;
+  }
+  #bottomRow .email label{
+   padding-top: 20px;
+  }
+  input[type="email"] {
+    width: 200px;  /* Adjust the width as needed */
+    margin-bottom: 1px;
+    padding-top: 7px;
+    font-size: small;
+    height: 20px;
+    
+}
+
+.name{
+    padding-top: 15px;
+}
+.name input[type="name"]{
+    padding-top: 2px;
+    width: 100px;
+    height: 20px;
+    font-size: small;
+}
+
+  .submit {
+    padding-top: 20px;
+    text-align: center;
+
+  }
+
+  .submit a{
+    color: #ffffff;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
+
+.submit a:hover {
+    background-color: rgb(226, 122, 140);
+    text-decoration: none;
+   
+    color: #000;
+}
+
+

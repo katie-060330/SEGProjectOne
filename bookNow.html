@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minto Sports Complex</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesBookNow.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col home">
+                    <a href="index.html" class="btn btn-secondary btn-lg toHome">Minto Sports Complex</a>
+                </div>
+                <div class="buttons">
+                    <a href="ourTeam.html" class="btn btn-secondary btn-sm">Our Team</a>
+                    <a href="ourFacilities.html" class="btn btn-sm btn-secondary">Our Facilities</a>
+                    <a href="trainingPrograms.html" class="btn btn-sm btn-secondary">Training/Programs</a>
+                    <a id="selected" href="bookNow.html" class="btn btn-secondary btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bookNow">
+        <div class="top"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="calendar">
+                        <!-- cite https://chatgpt.com/g/g-fAgI6VGij-frontend-developer/c/fcdda095-05c5-4656-b3d7-37d4338e55ab -->
+                        <div class="month">
+                            <button id="prev">&#10094;</button>
+                            <span id="monthYear"></span>
+                            <button id="next">&#10095;</button>
+                        </div>
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="days" id="days">
+                            <!-- Days will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="right">
+                    <div class="row" id="topRow">
+                        <div class="col">
+                            <div class="radio">
+                                <label>Select Age</label>
+                            </div>
+                            <input type="radio" name="age" id="option1" value="0-25">
+                            <label for="option1">Kids: 5-12</label><br>
+                            <input type="radio" name="age" id="option2" value="26-50">
+                            <label for="option2">Teen: 13-18</label><br>
+                            <input type="radio" name="age" id="option3" value="51-75">
+                            <label for="option3">Adult: 19+</label>
+                        </div>
+                        <div class="col">
+                            <div class="radio">
+                                <label>Select <a href="trainingPrograms.html">Program</a></label>
+                            </div>
+                            <input type="radio" name="program" id="program1" value="test-run">
+                            <label for="program1">Test Run</label><br>
+                            <input type="radio" name="program" id="program2" value="4-sessions">
+                            <label for="program2">4 Session Package</label><br>
+                            <input type="radio" name="program" id="program3" value="20-sessions">
+                            <label for="program3">20 Session Package</label>
+                        </div>
+                    </div>
+                    <div class="row" id="bottomRow">
+                        <div class="col">
+                            <div class="sportcat">
+                                <label>Select Sport</label>
+                                <select name="Sport" id="Sport">
+                                    <option value="" disabled selected>Here</option>
+                                    <option value="soccer">Soccer</option>
+                                    <option value="basketball">Basketball</option>
+                                    <option value="gym">Gym/Personal Trainers</option>
+                                </select>
+                                <br>
+                            </div>
+                            <div class="trainer-selection" id="soccerTrainerSelection">
+                                <label for="soccerTrainer">Select Trainer</label>
+                                <select name="soccerTrainer" id="soccerTrainer">
+                                    <option value="steve">Steve Johnson</option>
+                                    <option value="veronica">Veronica Mazzella</option>
+                                    <option value="blake">Blake Hatt</option>
+                                </select>
+                            </div>
+                            <div class="trainer-selection" id="basketballTrainerSelection">
+                                <label for="basketballTrainer">Select Trainer</label>
+                                <select name="basketballTrainer" id="basketballTrainer">
+                                    <option value="rose">Rose-Anne Joly</option>
+                                    <option value="patrick">Patrick Flynn</option>
+                                    <option value="sarah">Sarah Besselink</option>
+                                </select>
+                            </div>
+                            <div class="trainer-selection" id="gymTrainerSelection">
+                                <label for="gymTrainer">Select Trainer</label>
+                                <select name="gymTrainer" id="gymTrainer">
+                                    <option value="marcel">Marcel Bellefeuille</option>
+                                    <option value="taylor">Taylor Donato</option>
+                                    <option value="vincent">Vincent Campbell</option>
+                                </select>
+                            </div>
+                            <div class="time-input">
+                                <label for="appointment-time">Select Time</label>
+                                <input type="time" id="appointment-time" name="appointment-time">
+                            </div>
+                            <div class="name">
+                                <label for="name">Enter Name</label>
+                                <input type="name" id="name" name="name">
+                            </div>
+                            <div class="email">
+                               
+                                <label for="email">Enter Email</label>
+                            <input type="email" id="email" name="email">
+    
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="submit">
+                        <button><a href="confirmationOfBooking.html">Submit</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="phone">
+                        <h5>Phone Number</h5>
+                        <p>905-773-1234</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="HOO">
+                        <h5>Hours Of Operation</h5>
+                        <div class="HOOP">
+                            <p>Monday - Saturday: 6am - 11pm</p>
+                            <p>Sunday: 7am-10pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="location">
+                        <h5>Location</h5>
+                        <p>801 King Edward Ave, Ottawa ON K1N6N5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+
+        //cite https://chatgpt.com/c/6d7063bb-47e1-4a69-99de-1cdc6b660d37
+        document.addEventListener('DOMContentLoaded', function() {
+            const sportSelect = document.getElementById('Sport');
+            const soccerTrainerSelection = document.getElementById('soccerTrainerSelection');
+            const basketballTrainerSelection = document.getElementById('basketballTrainerSelection');
+            const gymTrainerSelection = document.getElementById('gymTrainerSelection');
+
+            sportSelect.addEventListener('change', function() {
+                soccerTrainerSelection.style.display = 'none';
+                basketballTrainerSelection.style.display = 'none';
+                gymTrainerSelection.style.display = 'none';
+
+                if (sportSelect.value === 'soccer') {
+                    soccerTrainerSelection.style.display = 'block';
+                } else if (sportSelect.value === 'basketball') {
+                    basketballTrainerSelection.style.display = 'block';
+                } else if (sportSelect.value === 'gym') {
+                    gymTrainerSelection.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

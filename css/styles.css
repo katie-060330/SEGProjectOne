@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+header .container-fluid {
+    background-color: #808080;
+    position: sticky;
+    top: 0;
+    border-bottom: #000 solid 1px;
+    z-index: 1000;
+}
+
+button {
+    margin: 0;
+    background-color: rgb(121, 8, 27);
+    border: #000 solid 2px;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: rgb(226, 122, 140);
+    border: #000 solid 1.5px;
+    color: #000;
+}
+footer .container-fluid {
+    background-color: #808080;
+    padding: 10px 0;
+}
+
+footer .col {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer p {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #FFF; 
+}
+
+footer h5 {
+    color: #FFF; 
+    font-size: 16px;
+}
+.bookNow .atributes{
+    margin-top: 3100px;
+}
+.submit {
+    padding: 5px;
+    padding-left: 5px;
+
+}
+
+
+.welcomparagraph a{
+    color: none;
+    text-decoration: underline;
+  }
+ .welcomparagraph a:link{
+    color: black;
+    font-weight: bold;
+
+  }
+ .welcomparagraph a:visited{
+    color: black;
+    font-weight: bolder;
+
+  }
+
+.toHome {
+    font-size: 16px;
+    color: #FFF;
+    background-color: rgb(121, 8, 27);
+    border: #000 solid 1.5px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.home {
+    padding-bottom: 20px; 
+}
+
+.toHome:hover {
+    background-color: rgb(121, 8, 27);
+    border: #000 solid 1.5px;
+}
+
+.buttons {
+    padding-top: 25px;
+    display: inline-block;
+}
+
+.buttons a {
+    border: #000 solid 1.5px;
+    background-color: rgb(121, 8, 27);
+    margin: 0 4px;
+}
+
+.buttons a:hover {
+    background-color: rgb(226, 122, 140);
+    border: #000 solid 1.5px;
+    color: #000;
+}
+
+.btn-sm {
+    padding: auto;
+    font-size: 10px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+main {
+    color: #000;
+    background-color: #e2e2e2;
+    padding: 10px 0; 
+}
+
+main h3 {
+    text-align: center;
+}
+
+main p {
+    font-size: small;
+    font-family: sans-serif;
+    color: #353535;
+    padding-bottom: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.phone {
+    padding-left: 25px;
+}
+
+.location {
+    padding-right: 10px;
+}
+
+.HOO {
+    padding-right: 28px;
+    justify-content: center;
+}
+
+.HOOP p {
+    line-height: 12px;
+    padding-bottom: none;
+}
+
+#selected {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+/* Our Facilities page */
+.ourFacilities main {
+    justify-content: center;
+}
+
+.ourFacilities .container {
+    padding-bottom: 20px;
+}
+
+.ourFacilities h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.ourFacilities .col img {
+    width: 200px;
+    height: 150px;
+}
+
+.ourFacilities h6 {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    
+}
+
+.ourFacilities p{
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+
+
+/* Collapsible text */
+.ourFacilities .toggle-button {
+    background-color: rgb(121, 8, 27);;
+    padding: 3px 5px;
+    font-size: small;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 3px;
+    font-size: small;
+}
+
+.ourFacilities .toggle-button:hover {
+    color: #000;
+    border: #000 solid 2px;
+}
+
+.ourTeam .toggle-button:hover {
+    color: #000;
+    border: #000 solid 2px;
+}
+
+.collapsible {
+    overflow: hidden;
+    transition:  0.3s ease-out;
+    max-height: 0;
+}
+
+.ourFacilities .collapsible.active {
+    max-height: 300px;
+    text-align: left;
+}
+
+
+/* Our team page */
+.ourTeam main {
+    justify-content: center;
+}
+.ourTeam button{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.ourTeam p{
+    text-align: justify;
+}
+.ourTeam h3 {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-align: left;
+    font-size: 24px;
+   
+}
+
+.ourTeam .col img {
+   
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.ourTeam h6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+   
+    
+}
+.soccerTrainers{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.basketballTrianers {
+    margin-top: 50px;
+    background-color: rgb(179, 179, 179);
+    padding-bottom: 10px;
+   
+   
+}
+.ourTeam h3{
+   padding-top: 10px;
+   margin-top: 10px;
+   
+}
+.basketballTrianers h3{
+    padding-top: 20px;
+}
+.ourTeam .basketballTrianers .container{
+    padding-bottom: 35px;
+}
+.ourTeam .personalTrianers .container{
+    padding-bottom: 35px;
+}
+
+
+
+/* Collapsible text */
+ .toggle-button {
+    padding: 3px 5px;
+    font-size: small;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 3px;
+    font-size: small;
+    padding-bottom: 5px;
+}
+
+ .toggle-button:hover {
+    color: #000;
+    border: #000 solid 2px;
+}
+
+ .toggle-button:hover {
+    color: #000;
+    border: #000 solid 2px;
+}
+
+.collapsible {
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    max-height: 0;
+}
+
+.ourTeam .collapsible.active {
+   
+    max-height: 300px;
+    text-align: left;
+}
+.ourTeam p{
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+
+.ourTeam .toggle-button {
+    padding: 3px 5px;
+    font-size: small;
+    cursor: pointer;
+    color: #FFF;
+    border-radius: 3px;
+    font-size: small;
+    padding-bottom: 5px;
+}
+
+ .toggle-button:hover {
+    color: #000;
+    border: #000 solid 2px;
+}
+
+ .toggle-button:hover {
+    color: #000;
+    border: #000 solid 2px;
+}
+.buttons a {
+    border: #000 solid 1.5px;
+    background-color: rgb(121, 8, 27);
+    margin: 0 4px;
+}
+
+.buttons a:hover {
+    background-color: rgb(226, 122, 140);
+    border: #000 solid 1.5px;
+    color: #000;
+}
+
+
+
+
+
+
+
+/* 
+trainings and programs */
+
+
+/* 
+TODO allign the ade and akill vertically with the skill and duration */
+ .info h3{
+    padding-top: 15px;
+    font-size: x-large;
+    text-align: left;
+    
+    padding-bottom: 10px;
+}
+ .info img{
+    border-radius: 3px;
+    width: auto;
+    height: 400px;
+    justify-content: left;
+   
+}
+ .info h6{
+    padding-top: 5px;
+    font-size: 20px;
+    text-align: left;
+    justify-content: left;
+}
+
+.info li{
+    text-align: justify;
+    margin-left: 5px;
+    font-size: 12px;
+   justify-content: left;
+    line-height: 1.5;
+    list-style-type: none;
+
+}
+
+ .info p{
+
+    text-align: justify;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    
+    line-height: 1.5;
+
+ }
+
+ 
